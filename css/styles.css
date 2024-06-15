@@ -1070,6 +1070,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     font-size: 56px;
     max-width: 496px;
     margin-bottom: 36px;
+    line-height: 1.07
 }
 
     .features{
@@ -1144,13 +1145,13 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     .footer-container{
         display: flex;
          flex-wrap: wrap;
-         gap: 72px 24px;
+         
                         
     }
     
     .container-footer{
         text-align: center;
-   
+         gap: 72px 24px;    
     }
     
     .f-container{
@@ -1231,6 +1232,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     .hero-title{
         font-size: 56px;
         max-width: 496px;
+        line-height: 1.07
     }
 
 
@@ -1333,8 +1335,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         }
 
         .footer-container{
-            display: flex;
-           align-items: baseline; 
+                display: flex;
+                    flex-direction: row;
+                    gap: unset;
         }
 
         .f-container{
@@ -1355,8 +1358,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         }
 
         .container-footer{
-            width: 208px;
-            height: 80px;
+                    margin-right: 80px;
+        
         }
 
         .footer-text-two{
@@ -1389,6 +1392,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
         .container{
             width: 1158px;
+            padding: 0 15px;
         }
    
     }
