@@ -610,6 +610,10 @@ gap: 47px;
     overflow: hidden;
 }
 
+.overlay-payment picture{
+    flex-shrink: 0;
+}
+
 .overlay{
     color: #F4F4FD;
     background-color: #4d5ae5;
@@ -1391,7 +1395,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         }
 
         .container{
-            width: 1158px;
+            max-width: 1158px;
             padding: 0 15px;
         }
    
