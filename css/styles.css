@@ -324,32 +324,35 @@ margin: 0 auto;
 /* padding: 188px 0; */
 padding: 72px 0;
     background-color: #2a2a2a;
-    /* background-image: linear-gradient(
-            rgba(46,47,66,0.7),
-            rgba(46, 47,66,0.7)),
-    url(../images/people-office\ 1.jpg); */
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-bg.jpg);
+        url(../images/fon\ 1x\ mob.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
     max-width: 1440px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 2dppx),
+ (min-resolution: 192dpi) {
+    .hero{
+        background-image: 
+        linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/fon\ 2x\ mob.jpg);
+    }
+}
+
 .hero-title{
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.11;
-        /* font-size: 56px;
-        line-height: 1.07; */
+        line-height: 1.07;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 496px;
-        margin-bottom: 48px;
+        max-width: 216px;
+       margin: 0 auto;
 }
 .hero-button{
     font-family: "Roboto", sans-serif;
@@ -360,11 +363,11 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     color: #fff;
     background-color: #4d5ae5;
     border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 48px;
+    padding: 16px 32px;
     display: block; 
     min-width: 169px;
-     height: 56px;
     border: none;
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -465,7 +468,7 @@ font-weight: 700;
 }
 
 .container-narrow{
-    width: 584px;
+    max-width: 584px;
 }
 .our-team-subtitle{
     font-weight: 700;
@@ -478,12 +481,10 @@ font-weight: 700;
         margin-bottom: 72px;
 }
 .team-list {
-display: flex;
-flex-wrap: wrap;
-/* gap: 24px; */
-gap: 72px;
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
+        display: flex;
+        gap: 72px;
+        flex-direction: column;
+        align-items: center;
 
 }
 
@@ -518,13 +519,11 @@ img {
 }
 
 .our-team-icon{
-display: flex;
-    gap: 24px;
-      margin-bottom: 8px;
-    display: flex;
-        align-items: center;
+        display: flex;
+        gap: 24px;
+        margin-top: 8px;
         justify-content: center;
-        flex-direction: row;
+       
 }
 
 
@@ -662,9 +661,9 @@ margin: 0 auto;
 .footer {
         /* padding-top: 100px;
         padding-bottom: 100px; */
+        background: #2e2f42;
         padding-top: 96px;
         padding-bottom: 96px;
-        background: #2e2f42;
       
 }
 
@@ -1060,21 +1059,29 @@ fill: transparent;
 
 @media screen and (min-width:768px) {
     
-    .container{
-        max-width: 768px;
-    }
+   
     .hero{
         padding: 112px 0;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/Dark-bg\ tab.jpg);
+        url(../images/fon\ 1x\ tab.jpg);
     }
     
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 2dppx),
+         (min-resolution: 192dpi) {
+        .hero {
+         background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7),
+                         rgba(46, 47, 66, 0.7)),
+             url(../images/fon\ 2x\ tab.jpg);
+             }
+         }
+
 .hero-title {
     font-size: 56px;
     max-width: 496px;
-    margin-bottom: 36px;
-    line-height: 1.07
+    
 }
 
     .features{
@@ -1109,14 +1116,19 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
    }
 
    .container-narrow{
-            width: 584 px;
+            max-width: 584 px;
             align-items: baseline;
    }
 
    .team-list{
-    gap: 64px 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
+            gap: 64px 24px;
+                flex-direction: row;
+                flex-wrap: wrap;
+   }
+
+   .ot-title{
+    margin-left: 0;
+    margin-right: 0;
    }
 
   .team-item{
@@ -1149,6 +1161,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     .footer-container{
         display: flex;
          flex-wrap: wrap;
+        gap: 72px 24px;
          
                         
     }
@@ -1230,13 +1243,23 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/people-office\ 1.jpg);
+                url(../images/fon\ 1x\ dec.jpg);
     }
 
+        @media screen and (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .hero {
+                background-image:
+                    linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/fon\ 2x\ dec.jpg);
+            }
+        }
     .hero-title{
         font-size: 56px;
         max-width: 496px;
-        line-height: 1.07
+       
     }
 
 
@@ -1289,8 +1312,8 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     }
 
     .team-list{
-        gap: 24px;
-        display: flex;
+        gap: 24px; 
+        flex-wrap: nowrap;
     }
 
         .team-item {
@@ -1302,17 +1325,18 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
         }
 
-    .ot-title{
-        padding-top: 32px;
-        padding-bottom: 32px;
-        text-align: center;
-    }
-
+        .ot-title {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            text-align: center;
+        }
     .hero-title{
         font-size: 56px;
         line-height: 1.07;
                
             }
+
+        
 
      .our-portfolio {
         padding-top: 120px;
@@ -1396,7 +1420,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 
         .container{
             max-width: 1158px;
-            padding: 0 15px;
+       
         }
    
     }
